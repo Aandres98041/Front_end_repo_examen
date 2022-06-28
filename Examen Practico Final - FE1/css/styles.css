@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Kdam+Thmor+Pro&display=swap');
+/*Iniciación de variables globales*/
+/*Empecé por el sitio desktop, está hecho sobre una resolución de 1680*907px*/
+*{
+    box-sizing:border-box ;
+    font-family: 'Be Vietnam Pro', sans-serif;    
+    margin: 0 ;
+    padding: 0;
+}
+/*definición font-size por defecto para adaptativo*/
+html{
+    font-size: 62.5%;
+}
+/*definicón de contenedores para header, main y footers*/
+.header_container{
+    display: flex;
+    flex-direction: row;
+    gap:22.4rem;
+    height: 8rem;
+    padding-top: 7.5rem;
+    padding-left: 22.5rem ;
+    padding-right: 16.5rem;
+    padding-bottom: 4.9rem;
+    width:100%;
+}
+/*contenedor adicional para la barra de navegación*/
+.nav_container{
+    color:#242E52;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    font-weight: 500;
+    gap: 2.8rem;
+}
+.nav_container__item{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+/*primer botón y su definición*/
+.button_class{
+    background-color: #F3603B;
+    box-shadow:0px 4px 7px rgba(0, 0, 0, 0.461) ;
+    border-style: none;
+    color:#FFFFFF ;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 4.4rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 13.4rem;
+}
+/*subdividí el main en 3 contenedores principales, siendo uno la frase inicial con la imagen
+otro la frase con las 3 opciones y otro las opiniones de usuarios*/
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:15.3rem; 
+    padding-bottom: 4.9rem;
+    padding-left: 22.5rem ;
+    padding-right: 16.5rem;
+    padding-top: 15rem;
+    width: 100%;
+}
+/*además el container1 está dividido en letra e imagen:
+    siendo letra: Titulo y párrafo.*/
+.container1__letra{
+    display:flex;
+    flex-direction: column;
+    gap:28px;
+    height: 38.6rem;
+    width: 50rem;
+}
+.title1{
+    font-size: 5.8rem;
+    color: #232C50; 
+}
+.par1{
+    font-size: 1.65rem;
+    height: 7.1rem;
+    width: 35rem;
+}
+.container1__imagen{
+    width: 58rem;
+    height: 48.5rem;
+    background-image: url('/img/Group\ \(2\).png');
+}
+/*para la definición del segundo contenedor tengo dos contenedores hijos:
+    El container2__left y el container2__right, siendo el primero el que
+    contiene el title2 y el par2, y el segundo 3 subgrupos que contienen
+    botón, titulo y párrafo*/
+.container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12.5rem;
+    padding-bottom: 4.9rem;
+    padding-left: 22.5rem ;
+    padding-right: 16.5rem;
+    padding-top: 15rem;
+    width: 100%;
+}
+.container2__left{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;   
+}
+.container2__right{
+    display: flex;
+    flex-direction: column;
+}
+.title2{
+    color:#232851;
+    font-size: 3.6rem;
+    font-weight: 700;
+    height: 8.8rem;
+    width: 43.3rem;
+}
+.p2{
+    width: 33.7rem ;
+    height: 8.8rem;
+    font-size: 1.6rem; 
+    font-weight: 500;
+}
+/*button_title es el conjunto de botón con título*/
+.button_title{
+    background-color: #fdad99;
+    width:100%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap:2.3rem
+}
+/*definí las propiedades de los items de la derecha para que queden
+estandarizados*/
+.container2__right__items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 55.3rem;
+    height: 15.8rem;
+    gap: 1.8 rem ;
+   
+}
+.par_container2{
+    height: 16rem;
+    color: #B3B2B7;
+    padding-left: 0;
+    font-size: 1.68rem;
+    font-weight: 500;
+    text-align: justify;
+}
+.titles_container2{
+    line-height: 4.3rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.button_class2{
+    background-color: #F3603B;
+    border-style: none;
+    border-radius: 5rem;
+    color:#FFFFFF ;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 4.3rem;
+    padding: 1rem;
+    width: 6.9rem;
+}
+/* tomé este titulo como un elemento a parte, no hace parte de ningún contenedor,
+sin emabrgo lo definí como contenedor para asignar un ancho en mobile sin problemas*/
+.title_section3{
+    color: #242E53;
+    display: flex;
+    flex-direction: row;
+    font-size: 3.92rem ;
+    font-weight: 700;
+    justify-content: center;
+    padding-top: 10.25rem;
+    padding-left: 22.5rem ;
+    padding-right: 16.5rem;
+    padding-bottom: 4.9rem;
+    width: 90%;
+}
+/*el container 3 contiene las opiniones de usuario, en onjunto por elementos
+que contienen la imagen, el nombre, y un párrafo*/
+.container3{
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+    padding-top: 7.4rem;
+    padding-left: 22.5rem ;
+    padding-right: 16.5rem;
+    padding-bottom: 4.9rem;
+    width: 90%;
+}
+.container3__items1{
+    align-items: center;  
+    display: flex;
+    flex-direction: column;
+    gap:2.1rem;
+}
+.container3__items2{
+    align-items: center;  
+    display: flex;
+    flex-direction: column;
+    gap:2.1rem;
+}
+.container3__items3{
+    align-items: center;  
+    display: flex;
+    flex-direction: column;
+    gap:2.1rem;
+}
+.container3_items_titles{
+    color: #3F4868;
+    font-size: 1.607rem;
+    font-weight: 700;  
+}
+.container3__items__par{
+    color:#8C8C94;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.button_section3{
+    display: flex;
+    padding-top: 4.5rem;
+    flex-direction: row;
+    width:92.5%;
+    justify-content: center;
+}
+/*para el footer generé un container que contiene 3 elementos, uno el naranja
+donde está la frase y el botón, otro que tiene los logos, las barras de navegación
+el formulario y el otro botón*/
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer_container1{
+    background-color: #F3613C;
+    color:#FFFFFF ;
+    display: flex;
+    flex-direction: row;
+    height: 27.4rem;
+    margin-top: 18rem;
+    padding-top: 6.4rem;
+    position: relative;
+}
+.footer_container1__title{
+    display: inline-block;
+    font-size: 4rem;
+    height: 9.6rem;
+    line-height: 4.78rem;
+    margin-left: 16.5rem;
+    position: relative;
+    width: 50rem;
+}
+.button_class3{
+    display: inline-block;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow:0px 4px 7px rgba(0, 0, 0, 0.461) ;
+    border-radius: 5rem;
+    border-style: none;
+    color:#F3603B ;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 4.4rem;
+    margin-left: 75.15rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 13.4rem;
+}
+/*el container2 del footer se divide en logos, barras de navegación, el formulario*/
+.footer_container2{
+    background-color:#1E1E26 ;
+    color:#FFFFFF ;
+    display: flex;
+    flex-wrap: wrap;
+    height: 22.4rem;
+    justify-content: space-around;
+    padding-top: 5rem;
+    position: relative;
+}
+.footer_container2__logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.footer_container2__logos_principal{
+    width: 12.3rem ;
+    height: 2.37rem;
+}
+.footer_container2__logos_redes{
+    width: 4rem;
+    height: 4rem;
+}
+.footer_container2__container_navs{
+    display: flex;
+    flex-direction: row;
+    gap: 22rem;
+    align-items: center;
+}
+.footer_container2__item1_1{
+    display: flex;
+    position: relative;
+    justify-items: flex-start;
+    flex-direction: row;
+    gap:1rem;
+}
+.footer_container2__item2{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.footer_container2__item3{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.footer_container2__item4{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap:1rem; 
+}
+.footer_container2y3{
+    display: flex;
+    flex-direction:column-reverse;
+}
+.footer_container2__item4_1{
+    color:#8C8C94;
+    position: relative;
+    margin-top: 20rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.footer_container2__options{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:white;
+}
+.form_class{
+    width: 20.1rem;
+    height: 4.4rem;
+    border-radius: 5rem;
+}
+/*contiene la frase de copyright pues para ordenarlo en la versión mobile tuve que
+modificar la disposición del web*/
+.footer_container3{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 18rem;
+    background-color:#1E1E26;
+    color:#8C8C94; 
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 5rem;
+}
+/* hice esta definición para que en el momento que esté desktop no se muestre el icono
+de menú de hamburguesa*/
+/*uso de pseudoselectores para subrayar cuando pase por un botón o menú de navegación
+se subrayen las opciones, también incluí la propiedad cursor,
+para que cuando se esté sobre un botón o menú de navegación aparezca el cursor diferente*/
+button:hover{
+    background-color: #c68e53;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.nav_container__item:hover{
+    cursor:pointer;
+    color:#F3603B;
+}
+.footer_container2__item3__items:hover{
+    cursor:pointer;
+    color:#F3603B;
+}
+.footer_container2__item2__items:hover{
+    cursor:pointer;
+    color:#F3603B;
+}
+.button_class3:hover{
+    text-decoration: underline;
+    text-decoration-color: #F3603B;
+    cursor: pointer;
+    background-color: #c6c4c4;
+}
+.form_class:hover{
+    border: 1px solid orangered;
+}
+a:link{
+    cursor: pointer;
+}
+/* incluí la propiead cusror wait, para que al hacer clic en el enlace
+se meustre el cursor en proceso de espera mientras carga el link*/
+a:active{
+    cursor: wait;
+}
+path:hover{
+    fill:#c68e53;  
+}
+.footer_container2__logos_redes:hover{
+    transform: scale(2);
+}
+.container3__items1:hover{
+    transform: scale(1.2);             
+} 
+.container3__items2:hover{
+    transform: scale(1.2);
+} 
+.container3__items3:hover{
+    transform: scale(1.2);
+}
+@media screen and (min-width: 375px ) {
+    .icono_hamburguesa {display:none;}  
+    .slide_menu{
+        display: none;
+    } 
+    }
+/*así mismo, definí que quiero dejar de ver y que empezar a ver cuando pase a mobile
+El viewport para mobile que se definió es de un ancho maximo de 375px, usando y probando
+en la resolución de IPhone SE*/
+@media screen and (max-width: 375px ) {
+    .slide_menu{
+        display: block;
+    }
+    .container3__items1{display: none;}
+    .container3__items3{display: none;}
+    .nav_container {display:none;}
+    .icono_hamburguesa {display:flex;}
+    .button1{ display: none;}
+    .header_container{  
+        display: flex;
+        padding-left: 0;
+        gap: 14rem;
+        width: 37.5rem;
+        padding-top: 5rem;
+        padding-left: 3rem;
+        padding-right: 0;
+        padding-bottom: 5rem;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        gap:5rem;
+    }
+    .container1__letra{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0rem;
+        gap:28px;
+        width: 100%;
+        height: 38.6rem;
+    }
+    .container1__imagen{
+        width: 100%;
+        height: 35rem;
+        background-image: url('/img/imgmobile.PNG');
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .title1{
+        font-size: 4rem;
+        color: #232C50;
+        text-align: center;
+    }
+    .par1{
+        font-size:1.8rem;
+        width: 100%;
+        text-align: center;
+        color: #8C8C94;
+    }
+    .container2{
+        display: flex;
+        flex-direction:column;  
+        gap:2rem;
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .title2{
+        color:#232851;
+        font-size: 3rem;
+        font-weight: 700;
+        width: 100%;
+        height: 8.8rem;
+    }
+    .p2{
+        width: 100%;
+        height: 8.8rem;
+        font-size: 1.7rem; 
+        font-weight: 500;
+        text-align: center;
+        color: #8C8C94;
+    }
+    .container2__left{
+        display: flex;
+        flex-direction: column;
+        gap: 3.6rem;
+        width: 100%;
+        text-align: center; 
+    }
+    .container2__right{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        text-align: center;
+        padding-left: 0;
+    }
+    .button_title{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap:1.5rem;  
+        text-align: center;
+        background-color: #fdad99;
+    }
+    .container2__right__items{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem ;
+        padding-left: 0;
+    }
+    .par_container2{
+        color:#8C8C94;
+        font-size: 1.6rem;
+        padding-right: 1rem;
+        width: 100%;
+        text-align: justify; 
+    }
+    .titles_container2{
+        font-size: 1.6rem;
+    }
+    .button_class2{
+        width: 7.5rem;
+        height: 5rem;
+    }   
+    .title_section3{
+        padding-top: 5rem;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        height: 15rem;
+        padding-bottom: 0;
+        font-size: 3rem ;
+        color: #242E53;
+        font-weight: 700;
+        text-align: center;
+    }
+    .container3{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+    .container3__items2:hover{
+        transform: scale(1);
+    } 
+    .container3__items2{
+        display: flex;
+        flex-direction: column;
+        gap:2.1rem;
+        width:37.5rem;
+        align-items: center;
+    }
+    .slide_menu{
+        display: flex;
+        justify-content: center;
+        width: 37.5rem;
+    }
+    .button_section3{
+        width:100%;
+    }
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100rem;
+    }
+    .footer_container1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        padding-top: 0;
+        background-color: #F3613C;
+        height: 50rem;
+        color:#FFFFFF ;
+        gap:2rem;
+        order:1;
+    }
+    .footer_container1__title{
+        margin-left: 0;
+        margin-top: 5rem;
+        width: 37.5rem;
+        height: 5rem;
+        line-height: 4.78rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .button_class3{
+        background-color: #FFFFFF;
+        margin-left: 12.5rem;
+        margin-top:12rem;
+    }
+    .footer_container2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        order:2;
+        height: 60rem;
+        align-items: center;
+    }
+    .footer_container2__logos{
+        display: flex;
+        flex-direction:column-reverse;
+        gap:2rem;
+        align-items: center;
+    }
+    .footer_container2__container_navs{
+        padding-top:0;
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+    .footer_container2__item1_1{
+        gap: 2rem;
+    }
+    .footer_container2__item2{
+        display: flex;
+        flex-direction: column;
+        gap:1.2rem;
+    }
+    .footer_container2__item3{
+        display: flex;
+        flex-direction: column;
+        gap:1.2rem;
+    }
+    .footer_container2y3{
+        display: flex;
+        flex-direction:column-reverse;   
+    }
+    .footer_container3{
+        padding-right: 0;
+        order: 3;
+        justify-content: center;
+     }
+    }
+    
+
