@@ -11,17 +11,19 @@
 html{
     font-size: 62.5%;
 }
+
+
 /*definicón de contenedores para header, main y footers*/
 .header_container{
     display: flex;
     flex-direction: row;
     gap:22.4rem;
     height: 8rem;
-    padding-top: 7.5rem;
-    padding-left: 22.5rem ;
-    padding-right: 16.5rem;
-    padding-bottom: 4.9rem;
+    padding: 7.5rem 16.5rem 4.9rem 22.5rem;
     width:100%;
+    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-position: 137.5rem 50rem;
+    background-repeat: repeat-y;
 }
 /*contenedor adicional para la barra de navegación*/
 .nav_container{
@@ -56,11 +58,12 @@ otro la frase con las 3 opciones y otro las opiniones de usuarios*/
     flex-direction: row;
     flex-wrap: wrap;
     gap:15.3rem; 
-    padding-bottom: 4.9rem;
-    padding-left: 22.5rem ;
-    padding-right: 16.5rem;
-    padding-top: 15rem;
+    padding: 15rem 16.5rem 4.9rem 22.5rem;
     width: 100%;
+    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-position: 100rem;
+    background-repeat: repeat-y;
+
 }
 /*además el container1 está dividido en letra e imagen:
     siendo letra: Titulo y párrafo.*/
@@ -94,16 +97,16 @@ otro la frase con las 3 opciones y otro las opiniones de usuarios*/
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12.5rem;
-    padding-bottom: 4.9rem;
-    padding-left: 22.5rem ;
-    padding-right: 16.5rem;
-    padding-top: 15rem;
+    padding: 15rem 16.5rem 4.9rem 22.5rem;
     width: 100%;
+    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-position: 100rem -75.25rem;
+    background-repeat:no-repeat;
 }
 .container2__left{
     display: flex;
     flex-direction: column;
-    gap: 3.6rem;   
+    gap: 3.6rem;     
 }
 .container2__right{
     display: flex;
@@ -124,7 +127,7 @@ otro la frase con las 3 opciones y otro las opiniones de usuarios*/
 }
 /*button_title es el conjunto de botón con título*/
 .button_title{
-    background-color: #fdad99;
+    background-color: #fae1db;
     width:100%;
     border-radius: 2rem;
     display: flex;
@@ -175,10 +178,7 @@ sin emabrgo lo definí como contenedor para asignar un ancho en mobile sin probl
     font-size: 3.92rem ;
     font-weight: 700;
     justify-content: center;
-    padding-top: 10.25rem;
-    padding-left: 22.5rem ;
-    padding-right: 16.5rem;
-    padding-bottom: 4.9rem;
+    padding: 10.25rem 16.5rem 4.9rem 16.5rem;
     width: 90%;
 }
 /*el container 3 contiene las opiniones de usuario, en onjunto por elementos
@@ -187,11 +187,11 @@ que contienen la imagen, el nombre, y un párrafo*/
     display: flex;
     flex-direction: row;
     gap: 3.5rem;
-    padding-top: 7.4rem;
-    padding-left: 22.5rem ;
-    padding-right: 16.5rem;
-    padding-bottom: 4.9rem;
+    padding: 7.4rem 16.5rem 4.9rem 22.5rem;
     width: 90%;
+    background-image: url('/imagenes/bg-tablet-pattern.svg');
+    background-position: -55rem -35.25rem;
+    background-repeat:no-repeat;
 }
 .container3__items1{
     align-items: center;  
@@ -432,26 +432,23 @@ en la resolución de IPhone SE*/
     .container3__items3{display: none;}
     .nav_container {display:none;}
     .icono_hamburguesa {display:flex;}
+    .icono_hamburguesa:hover{
+        cursor: pointer;
+    }
     .button1{ display: none;}
     .header_container{  
         display: flex;
         padding-left: 0;
         gap: 14rem;
         width: 37.5rem;
-        padding-top: 5rem;
-        padding-left: 3rem;
-        padding-right: 0;
-        padding-bottom: 5rem;
+        padding: 5rem 0 5rem 3rem;
     }
     .container1{
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
         width: 100%;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+        padding: 0 0 0 0;
         gap:5rem;
     }
     .container1__letra{
@@ -486,10 +483,7 @@ en la resolución de IPhone SE*/
         flex-direction:column;  
         gap:2rem;
         width: 100%;
-        padding-top: 0;
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
+        padding: 0 0 0 0;
     }
     .title2{
         color:#232851;
@@ -527,7 +521,7 @@ en la resolución de IPhone SE*/
         flex-direction: row;
         gap:1.5rem;  
         text-align: center;
-        background-color: #fdad99;
+        background-color:#fae1db;;
     }
     .container2__right__items{
         display: flex;
@@ -551,12 +545,9 @@ en la resolución de IPhone SE*/
         height: 5rem;
     }   
     .title_section3{
-        padding-top: 5rem;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 5rem 0 0 0;
         width: 100%;
         height: 15rem;
-        padding-bottom: 0;
         font-size: 3rem ;
         color: #242E53;
         font-weight: 700;
