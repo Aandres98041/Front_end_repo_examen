@@ -155,7 +155,7 @@ estandarizados*/
 }
 .par_container2{
     height: 16rem;
-    color: var(--varianteGrisClaro);
+    color: var(--azulGrisOscuro);
     padding-left: 0;
     font-size: 1.68rem;
     font-weight: 500;
@@ -220,12 +220,12 @@ que contienen la imagen, el nombre, y un párrafo*/
     gap:2.1rem;
 }
 .container3_items_titles{
-    color: var(--azulGrisOscuro);
+    color: var(--azulOscuro);
     font-size: 1.607rem;
     font-weight: 700;  
 }
 .container3__items__par{
-    color: var(--varianteGrisClaro);
+    color: var(--azulGrisOscuro);
     font-size: 1.6rem;
     font-weight: 500;
     text-align: center;
@@ -340,7 +340,7 @@ el formulario y el otro botón*/
     flex-direction:column-reverse;
 }
 .footer_container2__item4_1{
-    color:var(--varianteGrisClaro);
+    color: var(--azulGrisOscuro);
     position: relative;
     margin-top: 20rem;
     font-size: 1.25rem;
@@ -424,6 +424,48 @@ path:hover{
 } 
 .container3__items3:hover{
     transform: scale(1.2);
+}
+/* Se añade adicionalmente la resolución de 1440 p*/
+@media screen and (max-width: 1440px ) {
+    .header_container{
+        width: 100%;
+        gap: 15rem;
+    }
+   .nav_container__item{
+        width: 6rem;
+   }
+   .container1{
+    flex-flow: row nowrap;
+    width: 100%;
+    gap: 0;
+    padding-right: 0;
+   }
+   .container1__imagen{
+    width: 200;
+    background-size: cover;
+   }
+   .container2{
+    flex-flow: row nowrap;
+    gap:0;
+   }
+   .title_section3{
+    width: 100%;
+   }
+   .container3{
+    width: 100%;
+    align-items: center;
+   }
+   .button_section3{
+    display: flex;
+    width: 100%;
+    margin-left: 2.5rem;
+   }
+   .footer_container1{
+    padding-right: 10rem;
+   }
+   .button_class3{
+    margin-left: 35.15rem;
+   }
 }
 @media screen and (min-width: 375px ) {
     .icono_hamburguesa {display:none;}  
