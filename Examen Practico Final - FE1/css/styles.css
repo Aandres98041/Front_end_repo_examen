@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Kdam+Thmor+Pro&display=swap');
 /*Iniciación de variables globales*/
 /*Empecé por el sitio desktop, está hecho sobre una resolución de 1680*907px*/
+:root{
+    --rojoBrillante: rgb(242, 95, 58);
+    --azulOscuro: rgb(35, 44, 81);
+    --azulGrisOscuro: rgb(143, 148, 167);
+    --azulMuyOscuro: rgb(29, 30, 37);
+    --rojoMuyPalido: rgb(255, 239, 234);
+    --varianteGrisClaro: rgb(249, 249, 249);
+}
 *{
     box-sizing:border-box ;
     font-family: 'Be Vietnam Pro', sans-serif;    
@@ -40,7 +48,7 @@ html{
 }
 /*primer botón y su definición*/
 .button_class{
-    background-color: #F3603B;
+    background-color: var(--rojoBrillante);
     box-shadow:0px 4px 7px rgba(0, 0, 0, 0.461) ;
     border-style: none;
     color:#FFFFFF ;
@@ -76,7 +84,7 @@ otro la frase con las 3 opciones y otro las opiniones de usuarios*/
 }
 .title1{
     font-size: 5.8rem;
-    color: #232C50; 
+    color: var(--azulOscuro); 
 }
 .par1{
     font-size: 1.65rem;
@@ -113,7 +121,7 @@ otro la frase con las 3 opciones y otro las opiniones de usuarios*/
     flex-direction: column;
 }
 .title2{
-    color:#232851;
+    color:var(--azulOscuro);
     font-size: 3.6rem;
     font-weight: 700;
     height: 8.8rem;
@@ -127,7 +135,7 @@ otro la frase con las 3 opciones y otro las opiniones de usuarios*/
 }
 /*button_title es el conjunto de botón con título*/
 .button_title{
-    background-color: #fae1db;
+    background-color: var(--rojoMuyPalido);
     width:100%;
     border-radius: 2rem;
     display: flex;
@@ -147,7 +155,7 @@ estandarizados*/
 }
 .par_container2{
     height: 16rem;
-    color: #B3B2B7;
+    color: var(--varianteGrisClaro);
     padding-left: 0;
     font-size: 1.68rem;
     font-weight: 500;
@@ -159,7 +167,7 @@ estandarizados*/
     font-weight: 700;
 }
 .button_class2{
-    background-color: #F3603B;
+    background-color: var(--rojoBrillante);
     border-style: none;
     border-radius: 5rem;
     color:#FFFFFF ;
@@ -172,7 +180,7 @@ estandarizados*/
 /* tomé este titulo como un elemento a parte, no hace parte de ningún contenedor,
 sin emabrgo lo definí como contenedor para asignar un ancho en mobile sin problemas*/
 .title_section3{
-    color: #242E53;
+    color: var(--azulOscuro);
     display: flex;
     flex-direction: row;
     font-size: 3.92rem ;
@@ -212,12 +220,12 @@ que contienen la imagen, el nombre, y un párrafo*/
     gap:2.1rem;
 }
 .container3_items_titles{
-    color: #3F4868;
+    color: var(--azulGrisOscuro);
     font-size: 1.607rem;
     font-weight: 700;  
 }
 .container3__items__par{
-    color:#8C8C94;
+    color: var(--varianteGrisClaro);
     font-size: 1.6rem;
     font-weight: 500;
     text-align: center;
@@ -239,7 +247,7 @@ el formulario y el otro botón*/
     width: 100%;
 }
 .footer_container1{
-    background-color: #F3613C;
+    background-color: var(--rojoBrillante);
     color:#FFFFFF ;
     display: flex;
     flex-direction: row;
@@ -264,7 +272,7 @@ el formulario y el otro botón*/
     box-shadow:0px 4px 7px rgba(0, 0, 0, 0.461) ;
     border-radius: 5rem;
     border-style: none;
-    color:#F3603B ;
+    color:var(--rojoBrillante) ;
     font-size: 1.3rem;
     font-weight: 500;
     height: 4.4rem;
@@ -275,7 +283,7 @@ el formulario y el otro botón*/
 }
 /*el container2 del footer se divide en logos, barras de navegación, el formulario*/
 .footer_container2{
-    background-color:#1E1E26 ;
+    background-color:var(--azulMuyOscuro) ;
     color:#FFFFFF ;
     display: flex;
     flex-wrap: wrap;
@@ -332,7 +340,7 @@ el formulario y el otro botón*/
     flex-direction:column-reverse;
 }
 .footer_container2__item4_1{
-    color:#8C8C94;
+    color:var(--varianteGrisClaro);
     position: relative;
     margin-top: 20rem;
     font-size: 1.25rem;
@@ -351,11 +359,12 @@ el formulario y el otro botón*/
 /*contiene la frase de copyright pues para ordenarlo en la versión mobile tuve que
 modificar la disposición del web*/
 .footer_container3{
+    border: none;
     display: flex;
     justify-content: flex-end;
     padding-right: 18rem;
-    background-color:#1E1E26;
-    color:#8C8C94; 
+    background-color:var(--azulMuyOscuro);
+    color:var(--varianteGrisClaro); 
     font-size: 1.25rem;
     font-weight: 500;
     padding-bottom: 5rem;
@@ -366,31 +375,31 @@ de menú de hamburguesa*/
 se subrayen las opciones, también incluí la propiedad cursor,
 para que cuando se esté sobre un botón o menú de navegación aparezca el cursor diferente*/
 button:hover{
-    background-color: #c68e53;
+    opacity: 0.6;
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: white;
 }
 .nav_container__item:hover{
     cursor:pointer;
-    color:#F3603B;
+    color:var(--rojoBrillante);
 }
 .footer_container2__item3__items:hover{
     cursor:pointer;
-    color:#F3603B;
+    color:var(--rojoBrillante);
 }
 .footer_container2__item2__items:hover{
     cursor:pointer;
-    color:#F3603B;
+    color:var(--rojoBrillante);
 }
 .button_class3:hover{
     text-decoration: underline;
-    text-decoration-color: #F3603B;
+    text-decoration-color: var(--rojoBrillante);
     cursor: pointer;
-    background-color: #c6c4c4;
+    opacity: 0.6;
 }
 .form_class:hover{
-    border: 1px solid orangered;
+    border: 1px solid var(--rojoBrillante);
 }
 a:link{
     cursor: pointer;
@@ -401,7 +410,8 @@ a:active{
     cursor: wait;
 }
 path:hover{
-    fill:#c68e53;  
+    fill:var(--rojoBrillante);  
+    opacity: 0.5;
 }
 .footer_container2__logos_redes:hover{
     transform: scale(2);
@@ -469,14 +479,12 @@ en la resolución de IPhone SE*/
     }
     .title1{
         font-size: 4rem;
-        color: #232C50;
         text-align: center;
     }
     .par1{
         font-size:1.8rem;
         width: 100%;
         text-align: center;
-        color: #8C8C94;
     }
     .container2{
         display: flex;
@@ -486,7 +494,6 @@ en la resolución de IPhone SE*/
         padding: 0 0 0 0;
     }
     .title2{
-        color:#232851;
         font-size: 3rem;
         font-weight: 700;
         width: 100%;
@@ -498,7 +505,6 @@ en la resolución de IPhone SE*/
         font-size: 1.7rem; 
         font-weight: 500;
         text-align: center;
-        color: #8C8C94;
     }
     .container2__left{
         display: flex;
@@ -531,7 +537,6 @@ en la resolución de IPhone SE*/
         padding-left: 0;
     }
     .par_container2{
-        color:#8C8C94;
         font-size: 1.6rem;
         padding-right: 1rem;
         width: 100%;
@@ -549,7 +554,6 @@ en la resolución de IPhone SE*/
         width: 100%;
         height: 15rem;
         font-size: 3rem ;
-        color: #242E53;
         font-weight: 700;
         text-align: center;
     }
@@ -588,9 +592,7 @@ en la resolución de IPhone SE*/
         flex-direction: column;
         margin-top: 6rem;
         padding-top: 0;
-        background-color: #F3613C;
         height: 50rem;
-        color:#FFFFFF ;
         gap:2rem;
         order:1;
     }
